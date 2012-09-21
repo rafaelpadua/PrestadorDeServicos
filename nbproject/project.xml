@@ -6,6 +6,7 @@
             <name>PrestadoraDeServicos</name>
             <source-roots>
                 <root id="src.dir"/>
+                <root id="src.cargaBanco.dir" name="Carga do banco de dados"/>
             </source-roots>
             <test-roots>
                 <root id="test.src.dir"/>
