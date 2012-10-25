@@ -364,7 +364,4 @@ public class CadastroDeTiposDeServicosView extends javax.swing.JFrame {
         }
 
     }
-
-
-
 }

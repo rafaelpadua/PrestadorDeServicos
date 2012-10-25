@@ -101,6 +101,11 @@ public class CadastroDeClienteView extends javax.swing.JFrame {
         lbCidadeCliente.setText("Cidade:");
 
         cbCidadesCliente.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cbCidadesCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbCidadesClienteActionPerformed(evt);
+            }
+        });
 
         lbEnderecoCliente.setText("Endereço:");
 
@@ -236,7 +241,7 @@ public class CadastroDeClienteView extends javax.swing.JFrame {
         });
         spClientesCadastrados.setViewportView(jtClientesCadastrados);
 
-        lbClientesCadastrados.setFont(new java.awt.Font("Tahoma", 1, 14));
+        lbClientesCadastrados.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lbClientesCadastrados.setText("Clientes Cadastrados:");
 
         menu.setText("Menu");
@@ -347,6 +352,10 @@ public class CadastroDeClienteView extends javax.swing.JFrame {
         limparCampos();
         desbloquearCampos();
     }//GEN-LAST:event_miNovoActionPerformed
+
+    private void cbCidadesClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbCidadesClienteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cbCidadesClienteActionPerformed
     /**
      * @param args the command line arguments
      */
@@ -530,7 +539,7 @@ public class CadastroDeClienteView extends javax.swing.JFrame {
 
         for (Cliente objeto : lista) {
 
-            modelo.addRow(new Object[]{objeto, objeto.getCnpj(), objeto.getTelefone(), objeto.getContato()});
+            modelo.addRow(new Object[]{objeto.getNome(), objeto.getCnpj(), objeto.getTelefone(), objeto.getContato()});
 
         }
 

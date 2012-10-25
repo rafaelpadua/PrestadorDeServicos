@@ -15,16 +15,13 @@ public class FabricaDeConexoes {
      * @return a conexão com o banco de dados
      */
     public static Connection getConexao(){
-        Connection con = null;
+        
         try {
-            //jdbc:mysql://localhost/prestadordeservicos", "root", "root"
-            con = DriverManager.getConnection("jdbc:mysql://localhost/prestadordeservicos", "root", "root");
-            System.out.println("Conxão criada com sucesso.");
+            return DriverManager.getConnection("jdbc:mysql://localhost", "rafael", "120284");
         } catch (SQLException ex) {
             Logger.getLogger(FabricaDeConexoes.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-        return con;
+        return null;
     }
 
     /**

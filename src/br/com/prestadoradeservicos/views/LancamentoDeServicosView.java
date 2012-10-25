@@ -105,8 +105,18 @@ public class LancamentoDeServicosView extends javax.swing.JFrame {
         lbCliente.setText("Cliente:");
 
         cbServicos.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cbServicos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbServicosActionPerformed(evt);
+            }
+        });
 
         cbClientes.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cbClientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbClientesActionPerformed(evt);
+            }
+        });
 
         lbData.setText("Data:");
 
@@ -205,7 +215,7 @@ public class LancamentoDeServicosView extends javax.swing.JFrame {
         jtServicosLancados.getColumnModel().getColumn(3).setResizable(false);
         jtServicosLancados.getColumnModel().getColumn(4).setResizable(false);
 
-        lbServicosLancados.setFont(new java.awt.Font("Tahoma", 1, 14));
+        lbServicosLancados.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lbServicosLancados.setText("Serviços Lançados:");
 
         menu.setText("Menu");
@@ -315,6 +325,14 @@ public class LancamentoDeServicosView extends javax.swing.JFrame {
         controller.excluirServico();
         preencheJtable();
     }//GEN-LAST:event_miExcluirActionPerformed
+
+    private void cbServicosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbServicosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cbServicosActionPerformed
+
+    private void cbClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbClientesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cbClientesActionPerformed
     /**
      * @param args the command line arguments
      */
